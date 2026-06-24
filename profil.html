@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Profil – Informasi penyusun website pembelajaran Hukum Keluarga Islam." />
+  <title>Profil - Hukum Keluarga Islam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">☽</span>
+        <span class="logo-text">HKI</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" id="link-beranda">Beranda</a></li>
+        <li><a href="materi.html" class="nav-link" id="link-materi">Materi</a></li>
+        <li><a href="visi&amp;misi.html" class="nav-link" id="link-visi-misi">Visi & Misi</a></li>
+        <li><a href="profil.html" class="nav-link active" id="link-profil">Profil</a></li>
+        <li><a href="faq.html" class="nav-link" id="link-faq">FAQ</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE: PROFIL ============ -->
+  <div class="page" id="page-profil">
+    <section class="page-hero page-hero--dark" id="profil">
+      <div class="hero-overlay"></div>
+      <img src="hero_banner1.png" alt="Banner Hukum Keluarga Islam" class="hero-bg" />
+      <div class="page-hero-content">
+        <span class="page-hero-badge">👤 Tentang Penulis</span>
+        <h1 class="page-hero-title">Profil</h1>
+        <p class="page-hero-subtitle">Mahasiswa yang menyusun website pembelajaran Hukum Keluarga Islam ini</p>
+      </div>
+    </section>
+
+    <section class="profil-section">
+      <div class="profil-container">
+        <div class="profil-card">
+          <div class="profil-card-left">
+            <div class="profil-photo-wrap">
+              <img src="profile_avatar.png" alt="Foto Profil" class="profil-photo" />
+              <div class="profil-photo-ring"></div>
+              <div class="profil-status">
+                <span class="status-dot"></span>
+                <span>Mahasiswa Aktif</span>
+              </div>
+            </div>
+            <div class="profil-social">
+              <div class="profil-quote">
+                <span class="quote-mark">"</span>
+                <p>Mencari ilmu adalah kewajiban setiap Muslim</p>
+                <span class="quote-mark">"</span>
+              </div>
+              <small>— HR. Ibnu Majah</small>
+            </div>
+          </div>
+
+          <div class="profil-card-right">
+            <div class="profil-header">
+              <h2 class="profil-name" id="profil-nama">[ Nama Mahasiswa ]</h2>
+              <span class="profil-badge">🎓 Mahasiswa</span>
+            </div>
+
+            <div class="profil-info-grid">
+              <div class="profil-info-item">
+                <div class="profil-info-icon">🪪</div>
+                <div>
+                  <span class="profil-info-label">NIM</span>
+                  <span class="profil-info-value" id="profil-nim">[ NIM ]</span>
+                </div>
+              </div>
+              <div class="profil-info-item">
+                <div class="profil-info-icon">👤</div>
+                <div>
+                  <span class="profil-info-label">Nama Lengkap</span>
+                  <span class="profil-info-value" id="profil-nama-2">[ Nama Lengkap ]</span>
+                </div>
+              </div>
+              <div class="profil-info-item">
+                <div class="profil-info-icon">📚</div>
+                <div>
+                  <span class="profil-info-label">Program Studi</span>
+                  <span class="profil-info-value" id="profil-prodi">[ Program Studi ]</span>
+                </div>
+              </div>
+              <div class="profil-info-item">
+                <div class="profil-info-icon">🏛️</div>
+                <div>
+                  <span class="profil-info-label">Jurusan / Fakultas</span>
+                  <span class="profil-info-value" id="profil-jurusan">[ Jurusan ]</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="profil-bio">
+              <h4>Tentang Website Ini</h4>
+              <p>Website ini disusun sebagai media pembelajaran mandiri materi <strong>Hukum Keluarga Islam</strong>. Berisi berbagai topik fikih munakahat, faraidh, dan ketentuan hukum Islam yang berkaitan dengan kehidupan berkeluarga bagi umat Muslim.</p>
+            </div>
+
+            <div class="profil-skills">
+              <div class="skill-tag">Fikih Munakahat</div>
+              <div class="skill-tag">Hukum Waris</div>
+              <div class="skill-tag">Hukum Islam</div>
+              <div class="skill-tag">KHI & UU Perkawinan</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edit Profile Form -->
+        <div class="edit-section">
+          <h3>✏️ Edit Data Profil</h3>
+          <p class="edit-desc">Isi form berikut untuk memperbarui data profil yang ditampilkan di atas.</p>
+          <div class="edit-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="input-nim">NIM</label>
+                <input type="text" id="input-nim" placeholder="Contoh: 2201234567" />
+              </div>
+              <div class="form-group">
+                <label for="input-nama">Nama Lengkap</label>
+                <input type="text" id="input-nama" placeholder="Nama Lengkap Anda" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="input-prodi">Program Studi</label>
+                <input type="text" id="input-prodi" placeholder="Contoh: Hukum Keluarga Islam" />
+              </div>
+              <div class="form-group">
+                <label for="input-jurusan">Jurusan / Fakultas</label>
+                <input type="text" id="input-jurusan" placeholder="Contoh: Syariah" />
+              </div>
+            </div>
+            <button class="btn-save" onclick="saveProfile()">💾 Simpan Data Profil</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">☽</span>
+          <span>Hukum Keluarga Islam</span>
+        </div>
+        <p>Media pembelajaran fikih keluarga berbasis syariat Islam yang komprehensif and mudah dipahami.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <a href="index.html">Beranda</a>
+        <a href="materi.html">Materi</a>
+        <a href="visi&amp;misi.html">Visi & Misi</a>
+        <a href="profil.html">Profil</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Topik Utama</h4>
+        <a href="materi.html#materi-nikah">Pernikahan (Nikah)</a>
+        <a href="materi.html#materi-waris">Hukum Waris</a>
+        <a href="materi.html#materi-perceraian">Talak & Perceraian</a>
+        <a href="faq.html">Tanya Jawab</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Hukum Keluarga Islam. Dibuat untuk keperluan akademik.</p>
+      <p class="footer-ayat">بِسْمِ اللّٰهِ</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website materi Hukum Keluarga Islam – membahas pernikahan, waris, talak, dan ketentuan hukum Islam dalam kehidupan keluarga Muslim." />
+  <title>Hukum Keluarga Islam – Panduan Lengkap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">☽</span>
+        <span class="logo-text">HKI</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active" id="link-beranda">Beranda</a></li>
+        <li><a href="materi.html" class="nav-link" id="link-materi">Materi</a></li>
+        <li><a href="visi&amp;misi.html" class="nav-link" id="link-visi-misi">Visi & Misi</a></li>
+        <li><a href="profil.html" class="nav-link" id="link-profil">Profil</a></li>
+        <li><a href="faq.html" class="nav-link" id="link-faq">FAQ</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE: BERANDA ============ -->
+  <div class="page" id="page-beranda">
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+      <div class="hero-overlay"></div>
+      <img src="hero_banner.png" alt="Banner Hukum Keluarga Islam" class="hero-bg" />
+      <div class="hero-content">
+        <span class="hero-badge">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</span>
+        <h1 class="hero-title">Hukum Keluarga <span class="highlight">Islam</span></h1>
+        <p class="hero-subtitle">Memahami syariat Islam dalam kehidupan rumah tangga — dari pernikahan, hak & kewajiban, hingga hukum waris yang adil dan berkah.</p>
+        <div class="hero-actions">
+          <a href="materi.html" class="btn-primary">Mulai Belajar</a>
+          <a href="faq.html" class="btn-ghost">Lihat FAQ</a>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">📖</div>
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">Bab Utama</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⚖️</div>
+          <div class="stat-number" data-target="12">0</div>
+          <div class="stat-label">Topik Hukum</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📜</div>
+          <div class="stat-number" data-target="30">0</div>
+          <div class="stat-label">Dalil Al-Qur'an</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🕌</div>
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">Mazhab Fikih</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Materi Section -->
+    <section class="materi-section" id="materi">
+      <div class="section-header">
+        <span class="section-tag">Materi Utama</span>
+        <h2 class="section-title">Topik Hukum Keluarga Islam</h2>
+        <p class="section-desc">Pelajari berbagai aspek hukum keluarga dalam perspektif syariat Islam secara mendalam dan komprehensif.</p>
+      </div>
+      <div class="materi-grid">
+        <div class="materi-card" style="--delay: 0s">
+          <div class="materi-icon">💍</div>
+          <div class="materi-badge">Dasar</div>
+          <h3>Pernikahan (Nikah)</h3>
+          <p>Akad yang menghalalkan hubungan antara laki-laki dan perempuan berdasarkan syariat Islam, dengan rukun dan syarat yang telah ditetapkan.</p>
+          <ul class="materi-list">
+            <li>Rukun & syarat nikah</li>
+            <li>Wali nikah & saksi</li>
+            <li>Mahar dan ketentuannya</li>
+          </ul>
+          <a href="materi.html#materi-nikah" class="materi-card-link">Pelajari Selengkapnya →</a>
+        </div>
+        <div class="materi-card" style="--delay: 0.1s">
+          <div class="materi-icon">🤝</div>
+          <div class="materi-badge">Penting</div>
+          <h3>Hak & Kewajiban Suami Istri</h3>
+          <p>Mengatur keseimbangan peran, tanggung jawab, dan hak masing-masing pihak dalam ikatan pernikahan yang sah.</p>
+          <ul class="materi-list">
+            <li>Nafkah lahir & batin</li>
+            <li>Mu'asyarah bil ma'ruf</li>
+            <li>Hak asuh anak (hadhanah)</li>
+          </ul>
+          <a href="materi.html#materi-hak-kewajiban" class="materi-card-link">Pelajari Selengkapnya →</a>
+        </div>
+        <div class="materi-card" style="--delay: 0.2s">
+          <div class="materi-icon">📝</div>
+          <div class="materi-badge">Kompleks</div>
+          <h3>Talak & Perceraian</h3>
+          <p>Ketentuan Islam mengenai berakhirnya ikatan pernikahan, jenis-jenis talak, serta masa iddah yang wajib dijalani.</p>
+          <ul class="materi-list">
+            <li>Talak raj'i & ba'in</li>
+            <li>Khuluk & fasakh</li>
+            <li>Masa iddah & hukumnya</li>
+          </ul>
+          <a href="materi.html#materi-perceraian" class="materi-card-link">Pelajari Selengkapnya →</a>
+        </div>
+        <div class="materi-card" style="--delay: 0.3s">
+          <div class="materi-icon">🏠</div>
+          <div class="materi-badge">Keluarga</div>
+          <h3>Hukum Waris (Faraidh)</h3>
+          <p>Sistem pembagian harta warisan yang adil dan terstruktur berdasarkan Al-Qur'an dan Sunnah Nabi Muhammad SAW.</p>
+          <ul class="materi-list">
+            <li>Ashabul furudh</li>
+            <li>Bagian ahli waris</li>
+            <li>Hijab & mahjub</li>
+          </ul>
+          <a href="materi.html#materi-waris" class="materi-card-link">Pelajari Selengkapnya →</a>
+        </div>
+        <div class="materi-card" style="--delay: 0.4s">
+          <div class="materi-icon">👶</div>
+          <div class="materi-badge">Anak</div>
+          <h3>Nasab & Hak Anak</h3>
+          <p>Penentuan garis keturunan anak dan hak-hak yang wajib dipenuhi orang tua terhadap anak dalam Islam.</p>
+          <ul class="materi-list">
+            <li>Penetapan nasab</li>
+            <li>Hak anak dalam Islam</li>
+            <li>Pengakuan anak & adopsi</li>
+          </ul>
+          <a href="materi.html#materi-nasab" class="materi-card-link">Pelajari Selengkapnya →</a>
+        </div>
+        <div class="materi-card" style="--delay: 0.5s">
+          <div class="materi-icon">🤲</div>
+          <div class="materi-badge">Sosial</div>
+          <h3>Poligami dalam Islam</h3>
+          <p>Aturan dan syarat ketat poligami dalam Islam yang menekankan keadilan mutlak sebagai syarat utama kebolehannya.</p>
+          <ul class="materi-list">
+            <li>Dasar hukum poligami</li>
+            <li>Syarat keadilan</li>
+            <li>Batasan & ketentuan</li>
+          </ul>
+          <a href="materi.html#materi-poligami" class="materi-card-link">Pelajari Selengkapnya →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ayat Section -->
+    <section class="ayat-section">
+      <div class="ayat-container">
+        <div class="ayat-decoration">❝</div>
+        <p class="ayat-arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً</p>
+        <p class="ayat-latin">Wa min āyātihī an khalaqa lakum min anfusikum azwājan litaskunū ilayhā wa ja'ala baynakum mawaddatan wa raḥmatan</p>
+        <p class="ayat-terjemah">"Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang."</p>
+        <span class="ayat-source">— QS. Ar-Rum: 21</span>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">☽</span>
+          <span>Hukum Keluarga Islam</span>
+        </div>
+        <p>Media pembelajaran fikih keluarga berbasis syariat Islam yang komprehensif dan mudah dipahami.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <a href="index.html">Beranda</a>
+        <a href="materi.html">Materi</a>
+        <a href="visi&amp;misi.html">Visi & Misi</a>
+        <a href="profil.html">Profil</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Topik Utama</h4>
+        <a href="materi.html#materi-nikah">Pernikahan (Nikah)</a>
+        <a href="materi.html#materi-waris">Hukum Waris</a>
+        <a href="materi.html#materi-perceraian">Talak & Perceraian</a>
+        <a href="faq.html">Tanya Jawab</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Hukum Keluarga Islam. Dibuat untuk keperluan akademik.</p>
+      <p class="footer-ayat">بِسْمِ اللّٰهِ</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

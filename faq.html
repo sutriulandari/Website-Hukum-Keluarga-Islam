@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FAQ – Pertanyaan yang sering diajukan seputar Hukum Keluarga Islam." />
+  <title>FAQ - Hukum Keluarga Islam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">☽</span>
+        <span class="logo-text">HKI</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" id="link-beranda">Beranda</a></li>
+        <li><a href="materi.html" class="nav-link" id="link-materi">Materi</a></li>
+        <li><a href="visi&amp;misi.html" class="nav-link" id="link-visi-misi">Visi & Misi</a></li>
+        <li><a href="profil.html" class="nav-link" id="link-profil">Profil</a></li>
+        <li><a href="faq.html" class="nav-link active" id="link-faq">FAQ</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE: FAQ ============ -->
+  <div class="page" id="page-faq">
+    <section class="page-hero page-hero--teal" id="faq">
+            <div class="hero-overlay"></div>
+      <img src="hero_banner1.png" alt="Banner Hukum Keluarga Islam" class="hero-bg" />
+      <div class="page-hero-content">
+        <span class="page-hero-badge">❓ Tanya Jawab</span>
+        <h1 class="page-hero-title">FAQ</h1>
+        <p class="page-hero-subtitle">Pertanyaan yang sering diajukan seputar Hukum Keluarga Islam</p>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-container">
+
+        <div class="faq-search-wrap">
+          <div class="faq-search">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="faq-search" placeholder="Cari pertanyaan..." oninput="filterFAQ()" />
+          </div>
+        </div>
+
+        <div class="faq-categories">
+          <button class="faq-cat active" onclick="filterCategory('all', this)">Semua</button>
+          <button class="faq-cat" onclick="filterCategory('nikah', this)">Pernikahan</button>
+          <button class="faq-cat" onclick="filterCategory('talak', this)">Talak</button>
+          <button class="faq-cat" onclick="filterCategory('waris', this)">Waris</button>
+          <button class="faq-cat" onclick="filterCategory('lainnya', this)">Lainnya</button>
+        </div>
+
+        <div class="faq-list" id="faqList">
+
+          <div class="faq-item" data-cat="nikah">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Apa saja rukun nikah dalam Islam?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Rukun nikah dalam Islam ada <strong>5</strong>, yaitu:</p>
+              <ol>
+                <li><strong>Calon suami</strong> – Muslim, tidak ada halangan syar'i</li>
+                <li><strong>Calon istri</strong> – Muslimah, tidak ada halangan syar'i</li>
+                <li><strong>Wali</strong> – Ayah, kakek, atau wali hakim jika tidak ada</li>
+                <li><strong>Dua orang saksi</strong> – Muslim, baligh, berakal</li>
+                <li><strong>Ijab dan Qabul</strong> – Lafaz akad yang sah dan bersambung</li>
+              </ol>
+              <p>Apabila salah satu rukun tidak terpenuhi, maka pernikahan dianggap tidak sah menurut syariat Islam.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="nikah">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Berapa jumlah mahar minimum dalam Islam?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Islam <strong>tidak menetapkan batas minimum</strong> mahar secara pasti. Mahar boleh berupa apa saja yang bernilai, baik materi maupun jasa, asalkan disepakati kedua belah pihak.</p>
+              <p>Ulama berbeda pendapat tentang batas minimum:</p>
+              <ul>
+                <li><strong>Mazhab Hanafi:</strong> Minimal 10 dirham</li>
+                <li><strong>Mazhab Maliki:</strong> Minimal 3 dirham</li>
+                <li><strong>Mazhab Syafi'i & Hanbali:</strong> Tidak ada batas minimum, asalkan bernilai</li>
+              </ul>
+              <p>Rasulullah SAW bersabda: <em>"Mahar yang paling baik adalah yang paling mudah (ringan)."</em> (HR. Abu Dawud)</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="nikah">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Bolehkah wanita menikah tanpa wali?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Menurut <strong>jumhur ulama</strong> (mayoritas ulama) dari mazhab Syafi'i, Maliki, dan Hanbali, <strong>wali adalah rukun nikah</strong> — sehingga nikah tanpa wali <strong>tidak sah</strong>.</p>
+              <p>Nabi SAW bersabda: <em>"Tidak sah nikah kecuali dengan wali."</em> (HR. Abu Dawud, Tirmidzi)</p>
+              <p>Jika wali tidak ada atau enggan menikahkan tanpa alasan yang benar, maka <strong>wali hakim</strong> (seperti KUA/Pengadilan Agama) dapat bertindak sebagai wali.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="talak">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Apa perbedaan talak raj'i dan talak ba'in?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Talak Raj'i</strong> adalah talak yang masih memungkinkan suami kembali kepada istri <strong>tanpa akad nikah baru</strong>, selama masih dalam masa iddah. Ini adalah talak pertama dan kedua.</p>
+              <p><strong>Talak Ba'in</strong> dibagi menjadi dua:</p>
+              <ul>
+                <li><strong>Ba'in Sughra:</strong> Suami dapat kembali, tetapi harus dengan <strong>akad nikah baru</strong> dan mahar baru (talak satu atau dua setelah masa iddah habis)</li>
+                <li><strong>Ba'in Kubra:</strong> Talak tiga — suami <strong>tidak boleh menikah lagi</strong> dengan mantan istri tersebut, kecuali setelah wanita itu menikah dengan orang lain dan bercerai secara sah</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="talak">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Berapa lama masa iddah wanita yang dicerai?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Masa iddah berbeda-beda tergantung kondisi wanita:</p>
+              <ul>
+                <li><strong>Wanita yang masih haid:</strong> 3 kali quru' (3 masa suci atau 3 haid)</li>
+                <li><strong>Wanita yang menopause/tidak haid:</strong> 3 bulan</li>
+                <li><strong>Wanita yang hamil:</strong> Hingga melahirkan</li>
+                <li><strong>Janda karena kematian suami:</strong> 4 bulan 10 hari</li>
+                <li><strong>Belum dicampuri:</strong> Tidak ada iddah</li>
+              </ul>
+              <p>Dasar hukum: QS. Al-Baqarah: 228, 234 dan QS. At-Talaq: 4</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="waris">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Siapa saja yang berhak mendapat warisan dalam Islam?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Ahli waris (ashabul furudh)</strong> yang berhak mendapat warisan adalah mereka yang memiliki bagian tertentu dalam Al-Qur'an, antara lain:</p>
+              <ul>
+                <li>Suami: 1/4 atau 1/2</li>
+                <li>Istri: 1/8 atau 1/4</li>
+                <li>Anak laki-laki: 'ashabah (sisa)</li>
+                <li>Anak perempuan: 1/2 (seorang), 2/3 (lebih dari satu), atau 'ashabah bersama saudara</li>
+                <li>Ayah: 1/6 + 'ashabah</li>
+                <li>Ibu: 1/6 atau 1/3</li>
+              </ul>
+              <p>Penghalang waris: <strong>pembunuhan, perbedaan agama, dan perbudakan</strong>.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="waris">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Apakah anak angkat berhak mendapat warisan?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Dalam hukum Islam, <strong>anak angkat tidak mendapat warisan</strong> dari orang tua angkatnya, karena nasab anak angkat tetap mengikuti orang tua kandungnya.</p>
+              <p>Namun, orang tua angkat dapat memberikan harta kepada anak angkat melalui:</p>
+              <ul>
+                <li><strong>Wasiat</strong> – maksimal 1/3 dari harta, sebelum meninggal</li>
+                <li><strong>Hibah</strong> – pemberian semasa hidup</li>
+              </ul>
+              <p>Dasar hukum: QS. Al-Ahzab: 4-5 yang menegaskan bahwa anak angkat bukan anak kandung dalam hukum Islam.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="lainnya">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Apa itu Kompilasi Hukum Islam (KHI)?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p><strong>Kompilasi Hukum Islam (KHI)</strong> adalah kodifikasi hukum Islam yang berlaku di Indonesia, ditetapkan melalui <strong>Instruksi Presiden No. 1 Tahun 1991</strong>.</p>
+              <p>KHI terdiri dari tiga buku:</p>
+              <ul>
+                <li><strong>Buku I:</strong> Hukum Perkawinan (Pasal 1–170)</li>
+                <li><strong>Buku II:</strong> Hukum Kewarisan (Pasal 171–214)</li>
+                <li><strong>Buku III:</strong> Hukum Perwakafan (Pasal 215–229)</li>
+              </ul>
+              <p>KHI menjadi pedoman utama bagi hakim di <strong>Pengadilan Agama</strong> dalam menyelesaikan sengketa hukum keluarga Islam di Indonesia.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="lainnya">
+            <button class="faq-question" onclick="toggleFAQ(this)">
+              <span>Apa syarat sah poligami dalam Islam?</span>
+              <span class="faq-arrow">▾</span>
+            </button>
+            <div class="faq-answer">
+              <p>Islam membolehkan poligami dengan <strong>syarat-syarat yang sangat ketat</strong>:</p>
+              <ol>
+                <li><strong>Mampu berlaku adil</strong> – dalam hal nafkah, giliran bermalam, dan perlakuan (bukan perasaan)</li>
+                <li><strong>Mampu secara finansial</strong> – sanggup menafkahi seluruh istri dan anak-anak</li>
+                <li><strong>Membatasi hingga 4 istri</strong> – berdasarkan QS. An-Nisa: 3</li>
+              </ol>
+              <p>Allah berfirman: <em>"…jika kamu takut tidak akan berlaku adil, maka (nikahilah) seorang saja."</em> (QS. An-Nisa: 3)</p>
+              <p>Di Indonesia, poligami juga harus mendapat <strong>izin Pengadilan Agama</strong> sesuai UU No. 1 Tahun 1974 Pasal 4-5.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="faq-empty hidden" id="faqEmpty">
+          <div class="faq-empty-icon">🔍</div>
+          <p>Tidak ada pertanyaan yang sesuai dengan pencarian Anda.</p>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">☽</span>
+          <span>Hukum Keluarga Islam</span>
+        </div>
+        <p>Media pembelajaran fikih keluarga berbasis syariat Islam yang komprehensif dan mudah dipahami.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <a href="index.html">Beranda</a>
+        <a href="materi.html">Materi</a>
+        <a href="visi&amp;misi.html">Visi & Misi</a>
+        <a href="profil.html">Profil</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Topik Utama</h4>
+        <a href="materi.html#materi-nikah">Pernikahan (Nikah)</a>
+        <a href="materi.html#materi-waris">Hukum Waris</a>
+        <a href="materi.html#materi-perceraian">Talak & Perceraian</a>
+        <a href="faq.html">Tanya Jawab</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Hukum Keluarga Islam. Dibuat untuk keperluan akademik.</p>
+      <p class="footer-ayat">بِسْمِ اللّٰهِ</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

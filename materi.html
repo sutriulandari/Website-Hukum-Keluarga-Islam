@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Modul pembelajaran Hukum Keluarga Islam lengkap – Pernikahan, Hak & Kewajiban, Perceraian, Hukum Waris (Faraidh), Nasab Anak, dan Poligami." />
+  <title>Materi Lengkap Hukum Keluarga Islam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">☽</span>
+        <span class="logo-text">HKI</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" id="link-beranda">Beranda</a></li>
+        <li><a href="materi.html" class="nav-link active" id="link-materi">Materi</a></li>
+        <li><a href="visi&amp;misi.html" class="nav-link" id="link-visi-misi">Visi & Misi</a></li>
+        <li><a href="profil.html" class="nav-link" id="link-profil">Profil</a></li>
+        <li><a href="faq.html" class="nav-link" id="link-faq">FAQ</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE: HERO MATERI ============ -->
+  <section class="page-hero page-hero--gold">
+    <div class="hero-overlay"></div>
+      <img src="hero_banner1.png" alt="Banner Hukum Keluarga Islam" class="hero-bg" />
+    <div class="page-hero-content">
+      <span class="page-hero-badge">📖 Kurikulum Fikih Keluarga</span>
+      <h1 class="page-hero-title">Materi Pembelajaran</h1>
+      <p class="page-hero-subtitle">Modul interaktif kajian Hukum Keluarga Islam berdasarkan syariat Islam & perundang-undangan di Indonesia.</p>
+    </div>
+  </section>
+
+  <!-- ============ SPLIT LAYOUT ============ -->
+  <div class="materi-layout">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside class="materi-sidebar">
+      <h3>Daftar Modul</h3>
+      <nav class="materi-sidebar-nav">
+        <a href="#materi-nikah" class="materi-sidebar-link active">💍 1. Pernikahan (Nikah)</a>
+        <a href="#materi-hak-kewajiban" class="materi-sidebar-link">🤝 2. Hak & Kewajiban</a>
+        <a href="#materi-perceraian" class="materi-sidebar-link">📝 3. Talak & Perceraian</a>
+        <a href="#materi-waris" class="materi-sidebar-link">🏠 4. Hukum Waris (Faraidh)</a>
+        <a href="#materi-nasab" class="materi-sidebar-link">👶 5. Nasab & Hak Anak</a>
+        <a href="#materi-poligami" class="materi-sidebar-link">🤲 6. Poligami dalam Islam</a>
+      </nav>
+    </aside>
+
+    <!-- RIGHT CONTENT AREA -->
+    <main class="materi-content">
+
+      <!-- SECTION 1: PERNIKAHAN -->
+      <article class="materi-section-detail" id="materi-nikah">
+        <h2>💍 Pernikahan (Munakahat)</h2>
+        <p>Pernikahan dalam Islam adalah akad sakral yang menghalalkan hubungan antara laki-laki dan perempuan untuk hidup bersama, membentuk ikatan lahir batin, membina keluarga sakinah, mawaddah, warahmah, serta melestarikan keturunan yang sah.</p>
+        
+        <div class="materi-ayat-box">
+          <p class="materi-ayat-arabic">وَأَنْكِحُوا الْأَيَامَىٰ مِنْكُمْ وَالصَّالِحِينَ مِنْ عِبَادِكُمْ وَإِمَائِكُمْ ۚ إِنْ يَكُونُوا فُقَرَاءَ يُغْنِهِمُ اللَّهُ مِنْ فَضْلِهِ</p>
+          <p class="materi-ayat-latin">Wa ankiḥul-ayāmā minkum waṣ-ṣāliḥīna min 'ibādikum wa imā'ikum, iy yakūnū fuqarā'a yughnihimullāhu min faḍlih</p>
+          <p class="materi-ayat-translation">"Dan nikahkanlah orang-orang yang masih membujang di antara kamu, dan orang-orang yang layak (menikah) dari hamba-hamba sahayamu yang laki-laki dan perempuan. Jika mereka miskin, Allah akan memampukan mereka dengan karunia-Nya."</p>
+          <span class="materi-ayat-source">QS. An-Nur: 32</span>
+        </div>
+
+        <h3>A. Rukun Pernikahan</h3>
+        <p>Agar pernikahan dinyatakan sah menurut syariat Islam, terdapat 5 rukun nikah yang wajib terpenuhi:</p>
+        <ul class="materi-sublist">
+          <li><strong>Calon Suami:</strong> Seorang laki-laki Muslim yang baligh, berakal, tidak dalam keadaan dipaksa, serta tidak terhalang secara syar'i (bukan mahram calon istri).</li>
+          <li><strong>Calon Istri:</strong> Seorang wanita Muslimah yang tidak bersuami, tidak berada dalam masa iddah, and bukan mahram dari calon suami.</li>
+          <li><strong>Wali Nikah:</strong> Laki-laki Muslim, adil, merdeka, dan baligh yang berhak menikahkan pengantin wanita.</li>
+          <li><strong>Dua Orang Saksi:</strong> Dua orang laki-laki Muslim, baligh, berakal, adil, and mengerti jalannya ijab qabul.</li>
+          <li><strong>Ijab dan Qabul (Sighat Akad):</strong> Ucapan ijab (penyerahan) dari wali nikah dan ucapan qabul (penerimaan) dari calon suami secara bersambung.</li>
+        </ul>
+
+        <h3>B. Wali Nikah & Ketentuannya</h3>
+        <p>Wali nikah terbagi menjadi dua kelompok besar berdasarkan hubungannya:</p>
+        <ul class="materi-sublist numbered">
+          <li><strong>Wali Nasab:</strong> Wali yang memiliki hubungan darah dengan calon pengantin wanita. Urutannya dimulai dari ayah kandung, kakek (ayah dari ayah), saudara laki-laki seayah seibu, saudara laki-laki seayah, paman seayah seibu, hingga anak paman seayah seibu.</li>
+          <li><strong>Wali Hakim:</strong> Pejabat yang ditunjuk oleh negara/pemerintah (seperti kepala KUA di Indonesia) untuk bertindak sebagai wali apabila wali nasab tidak ada sama sekali, wali nasab tidak memenuhi syarat, atau wali nasab enggan (adhal) tanpa alasan syar'i.</li>
+        </ul>
+
+        <h3>C. Mahar (Mas Kawin)</h3>
+        <p>Mahar adalah pemberian wajib dari pengantin pria kepada pengantin wanita sebagai lambang penghormatan and tanggung jawab. Mahar adalah hak mutlak istri yang tidak boleh diambil oleh siapapun, termasuk suami atau orang tua, kecuali dengan kerelaan hati sang istri.</p>
+        <p><strong>Ketentuan Mahar:</strong> Islam menyukai mahar yang bernilai manfaat (tidak harus berupa uang/emas, bisa jasa seperti hafalan Al-Qur'an) namun ringan dan tidak mempersulit pihak pengantin pria. Rasulullah SAW bersabda: <em>"Mahar yang paling berkah adalah yang paling mudah dipenuhi."</em> (HR. Ahmad).</p>
+      </article>
+
+      <!-- SECTION 2: HAK & KEWAJIBAN -->
+      <article class="materi-section-detail" id="materi-hak-kewajiban">
+        <h2>🤝 Hak & Kewajiban Suami Istri</h2>
+        <p>Pernikahan melahirkan konsekuensi hukum berupa timbulnya hak dan kewajiban bagi kedua belah pihak secara berimbang. Pemenuhan hak dan kewajiban ini merupakan fondasi utama terciptanya keharmonisan rumah tangga yang berkah.</p>
+
+        <div class="materi-ayat-box">
+          <p class="materi-ayat-arabic">وَلَهُنَّ مِثْلُ الَّذِي عَلَيْهِنَّ بِالْمَعْرُوفِ ۚ وَلِلرِّجَالِ عَلَيْهِنَّ دَرَجَةٌ ۗ وَاللَّهُ عَزِيزٌ حَكِيمٌ</p>
+          <p class="materi-ayat-latin">Wa lahunna miṣlullażī 'alaihinna bil-ma'rūfi wa lir-rijāli 'alaihinna darajah, wallāhu 'azīzun ḥakīm</p>
+          <p class="materi-ayat-translation">"Dan para wanita mempunyai hak yang seimbang dengan kewajibannya menurut cara yang ma'ruf. Akan tetapi para suami, mempunyai satu tingkatan kelebihan daripada istrinya. Dan Allah Maha Perkasa lagi Maha Bijaksana."</p>
+          <span class="materi-ayat-source">QS. Al-Baqarah: 228</span>
+        </div>
+
+        <h3>A. Kewajiban Suami (Hak Istri)</h3>
+        <p>Kewajiban suami terbagi atas nafkah materi dan perlakuan non-materi:</p>
+        <ul class="materi-sublist">
+          <li><strong>Nafkah Lahir:</strong> Menyediakan makanan yang layak, pakaian (kiswah), dan tempat tinggal (maskan) yang aman bagi istri sesuai batas kemampuan ekonomi suami.</li>
+          <li><strong>Nafkah Batin:</strong> Memberikan kebutuhan biologis yang makruf, rasa cinta, ketenteraman jiwa, dan perlindungan moral.</li>
+          <li><strong>Mu'asyarah bil Ma'ruf:</strong> Memperlakukan istri dengan lemah lembut, santun, bertutur kata baik, dan sabar menghadapi kekurangan istri.</li>
+          <li><strong>Pendidikan Agama:</strong> Membimbing dan mendidik istri dalam urusan syariat Islam, akhlak, dan tata cara ibadah.</li>
+        </ul>
+
+        <h3>B. Kewajiban Istri (Hak Suami)</h3>
+        <p>Kewajiban utama istri adalah menjaga komitmen kesetiaan dan kehormatan rumah tangga:</p>
+        <ul class="materi-sublist">
+          <li><strong>Ketaatan Syar'i:</strong> Patuh kepada suami dalam segala instruksi dan keputusan selama tidak bertentangan dengan hukum Allah dan Rasul-Nya.</li>
+          <li><strong>Menjaga Kehormatan:</strong> Menjaga kesucian diri saat suami ada maupun tidak ada, serta tidak mengizinkan orang yang tidak disukai suami masuk ke rumah.</li>
+          <li><strong>Mengelola Harta:</strong> Menjaga dan mengelola harta benda suami secara amanah dan bijaksana tanpa boros.</li>
+          <li><strong>Pendidikan Anak:</strong> Menjadi pendidik utama (madrasah ula) bagi anak-anak di lingkungan internal rumah.</li>
+        </ul>
+
+        <h3>C. Hak Asuh Anak (Hadhanah)</h3>
+        <p>Hadhanah adalah pemeliharaan anak yang belum mandiri (belum mumayyiz) setelah terjadi perceraian. Dalam Islam, **ibu adalah pihak yang paling berhak** atas hadhanah karena kelembutan kasih sayangnya, asalkan ia beragama Islam, sehat akal, merdeka, berkelakuan baik, and belum menikah lagi dengan laki-laki lain yang asing bagi anak tersebut. Jika ibu tidak memenuhi syarat, hak asuh beralih ke nenek dari ibu, ayah, nenek dari ayah, dan seterusnya.</p>
+      </article>
+
+      <!-- SECTION 3: TALAK & PERCERAIAN -->
+      <article class="materi-section-detail" id="materi-perceraian">
+        <h2>📝 Talak & Perceraian (Furqah)</h2>
+        <p>Islam memandang pernikahan sebagai ikatan abadi. Namun, jika perselisihan sudah tidak bisa didamaikan, Islam membuka jalan keluar berupa perceraian demi kemaslahatan bersama, meskipun hal tersebut merupakan perbuatan halal yang paling dibenci oleh Allah SWT.</p>
+
+        <div class="materi-ayat-box">
+          <p class="materi-ayat-arabic">الطَّلَاقُ مَرَّتَانِ ۖ فَإِمْسَاكٌ بِمَعْرُوفٍ أَوْ تَسْرِيحٌ بِإِحْسَانٍ</p>
+          <p class="materi-ayat-latin">Aṭ-ṭalāqu marratān(i), fa imsākum bil-ma'rūfi au tasrīḥum bi'iḥsān</p>
+          <p class="materi-ayat-translation">"Talak (yang dapat dirujuki) dua kali. Setelah itu boleh rujuk dengan cara yang ma'ruf atau menceraikan dengan cara yang baik."</p>
+          <span class="materi-ayat-source">QS. Al-Baqarah: 229</span>
+        </div>
+
+        <h3>A. Macam-Macam Talak</h3>
+        <p>Talak dapat digolongkan berdasarkan boleh atau tidaknya suami untuk rujuk kembali:</p>
+        <ul class="materi-sublist numbered">
+          <li><strong>Talak Raj'i:</strong> Talak satu atau dua yang dijatuhkan suami. Dalam masa iddah (penantian), suami berhak rujuk kembali kepada istrinya **tanpa perlu akad nikah baru, saksi baru, atau mahar baru**. Cukup dengan ucapan rujuk atau tindakan fisik bersenggama.</li>
+          <li><strong>Talak Ba'in Sughra:</strong> Perceraian yang memutuskan ikatan perkawinan namun memperbolehkan keduanya menikah kembali **dengan akad nikah, saksi, dan mahar yang baru**. Terjadi jika masa iddah talak raj'i telah habis, perceraian karena khuluk (gugat cerai), atau fasakh.</li>
+          <li><strong>Talak Ba'in Kubra:</strong> Talak tiga yang dijatuhkan suami secara sekaligus atau berangsur. Setelah talak ini, mantan suami **dilarang keras** rujuk atau menikah kembali dengan mantan istrinya, kecuali jika mantan istrinya telah menikah dengan laki-laki lain (muhallil), melakukan hubungan biologis, kemudian bercerai secara sah and wajar, serta telah menyelesaikan masa iddahnya.</li>
+        </ul>
+
+        <h3>B. Khuluk, Fasakh, dan Li'an</h3>
+        <p>Selain talak dari pihak suami, ada bentuk putusnya perkawinan yang lain:</p>
+        <ul class="materi-sublist">
+          <li><strong>Khuluk:</strong> Gugatan cerai yang diajukan oleh istri ke Pengadilan Agama dengan kesediaan membayar tebusan ('iwadh) kepada suami karena ketidakmampuan hidup bersama.</li>
+          <li><strong>Fasakh:</strong> Pembatalan atau pemutusan pernikahan oleh hakim karena adanya cacat/halangan saat akad (misal ternyata mahram), atau suami tidak memberi nafkah dalam jangka panjang, atau suami sakit gila/impotensi.</li>
+          <li><strong>Li'an:</strong> Sumpah saling melaknat antara suami istri karena suami menuduh istrinya berzina tanpa 4 saksi, yang menyebabkan perkawinan putus selamanya dan anak yang dikandung lepas nasabnya dari sang ayah.</li>
+        </ul>
+
+        <h3>C. Ketentuan Masa Iddah</h3>
+        <p>Iddah adalah masa menunggu bagi seorang wanita yang diceraikan atau ditinggal mati oleh suaminya sebelum ia diperbolehkan menikah dengan laki-laki lain:</p>
+        <ul class="materi-sublist">
+          <li><strong>Wanita Hamil:</strong> Masa iddahnya sampai ia melahirkan kandungannya (QS. At-Talaq: 4).</li>
+          <li><strong>Wanita yang Haid:</strong> Masa iddahnya adalah 3 kali masa suci / quru' (QS. Al-Baqarah: 228).</li>
+          <li><strong>Wanita Menopause / Belum Haid:</strong> Masa iddahnya adalah 3 bulan penuh.</li>
+          <li><strong>Wanita yang Ditinggal Mati Suami:</strong> Masa iddahnya adalah 4 bulan 10 hari, baik ia masih haid maupun sudah menopause.</li>
+          <li><strong>Wanita Belum Dicampuri (Qoblal Dukhul):</strong> Tidak memiliki masa iddah sama sekali jika dicerai hidup.</li>
+        </ul>
+      </article>
+
+      <!-- SECTION 4: HUKUM WARIS -->
+      <article class="materi-section-detail" id="materi-waris">
+        <h2>🏠 Hukum Waris (Faraidh)</h2>
+        <p>Hukum Waris Islam atau Faraidh mengatur pemindahan hak kepemilikan harta benda dari orang yang meninggal dunia (pewaris) kepada orang-orang yang masih hidup (ahli waris) secara proporsional, adil, and terikat oleh nash Al-Qur'an.</p>
+
+        <div class="materi-ayat-box">
+          <p class="materi-ayat-arabic">يُوصِيكُمُ اللَّهُ فِي أَوْلَادِكُمْ ۖ لِلذَّكَرِ مِثْلُ حَظِّ الْأُنْثَيَيْنِ</p>
+          <p class="materi-ayat-latin">Yūṣīkumullāhu fī aulādikum, liż-żakari miṣlu ḥaẓẓil-unṡayain</p>
+          <p class="materi-ayat-translation">"Allah mensyariatkan bagimu tentang (pembagian warisan untuk) anak-anakmu. Yaitu: bagian seorang anak laki-laki sama dengan bagian dua orang anak perempuan."</p>
+          <span class="materi-ayat-source">QS. An-Nisa: 11</span>
+        </div>
+
+        <h3>A. Sebab-Sebab Mendapatkan Warisan</h3>
+        <p>Seseorang berhak menerima warisan hanya karena tiga alasan syar'i:</p>
+        <ul class="materi-sublist">
+          <li><strong>Nasab (Hubungan Kekerabatan):</strong> Hubungan darah kandung dengan pewaris (seperti anak, orang tua, saudara).</li>
+          <li><strong>Pernikahan (Mushaharah):</strong> Ikatan pernikahan yang sah pada saat pewaris meninggal dunia (suami atau istri).</li>
+          <li><strong>Wala':</strong> Hubungan pembebasan budak (sudah tidak relevan di masa kini).</li>
+        </ul>
+
+        <h3>B. Penghalang Kewarisan (Mani'ul Irsi)</h3>
+        <p>Seseorang yang memiliki sebab kewarisan di atas dapat gugur hak warisnya jika:</p>
+        <ul class="materi-sublist">
+          <li><strong>Pembunuhan:</strong> Ahli waris membunuh pewaris secara sengaja. Rasulullah SAW bersabda: <em>"Pembunuh tidak mewarisi sedikit pun."</em> (HR. Abu Dawud).</li>
+          <li><strong>Perbedaan Agama:</strong> Ahli waris beragama selain Islam sedangkan pewaris beragama Islam, atau sebaliknya. <em>"Orang Muslim tidak mewarisi orang kafir, dan orang kafir tidak mewarisi orang Muslim."</em> (Muttafaq 'Alaih).</li>
+          <li><strong>Perbudakan:</strong> Budak tidak berhak menerima atau memberi waris karena ia tidak memiliki hak milik penuh atas harta.</li>
+        </ul>
+
+        <h3>C. Tabel Pembagian Ahli Waris Utama (Ashabul Furudh)</h3>
+        <p>Ashabul Furudh adalah golongan ahli waris yang jatah pembagiannya telah ditentukan angkanya di dalam Al-Qur'an secara pasti:</p>
+
+        <div class="table-responsive">
+          <table class="table-waris">
+            <thead>
+              <tr>
+                <th>Ahli Waris</th>
+                <th>Jatah Bagian</th>
+                <th>Kondisi Ketentuan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2"><strong>Suami</strong></td>
+                <td>1/2</td>
+                <td>Jika pewaris (istri) tidak memiliki anak/cucu.</td>
+              </tr>
+              <tr class="highlight-table-row">
+                <td>1/4</td>
+                <td>Jika pewaris (istri) memiliki anak/cucu.</td>
+              </tr>
+              <tr>
+                <td rowspan="2"><strong>Istri</strong></td>
+                <td>1/4</td>
+                <td>Jika pewaris (suami) tidak memiliki anak/cucu.</td>
+              </tr>
+              <tr class="highlight-table-row">
+                <td>1/8</td>
+                <td>Jika pewaris (suami) memiliki anak/cucu.</td>
+              </tr>
+              <tr>
+                <td rowspan="2"><strong>Ibu</strong></td>
+                <td>1/3</td>
+                <td>Jika pewaris tidak memiliki anak/cucu, dan tidak ada saudara lebih dari satu.</td>
+              </tr>
+              <tr class="highlight-table-row">
+                <td>1/6</td>
+                <td>Jika pewaris memiliki anak/cucu, atau memiliki saudara dua orang atau lebih.</td>
+              </tr>
+              <tr>
+                <td rowspan="3"><strong>Ayah</strong></td>
+                <td>1/6</td>
+                <td>Jika pewaris memiliki anak laki-laki atau cucu laki-laki.</td>
+              </tr>
+              <tr>
+                <td>1/6 + Sisa (Ashabah)</td>
+                <td>Jika pewaris hanya memiliki anak perempuan (tanpa anak laki-laki).</td>
+              </tr>
+              <tr class="highlight-table-row">
+                <td>Sisa (Ashabah)</td>
+                <td>Jika pewaris tidak memiliki anak atau cucu sama sekali.</td>
+              </tr>
+              <tr>
+                <td rowspan="2"><strong>Anak Perempuan</strong></td>
+                <td>1/2</td>
+                <td>Jika sendirian (hanya satu anak) dan tidak ada anak laki-laki.</td>
+              </tr>
+              <tr class="highlight-table-row">
+                <td>2/3</td>
+                <td>Jika berjumlah dua orang atau lebih dan tidak ada anak laki-laki.</td>
+              </tr>
+              <tr>
+                <td><strong>Anak Laki-laki</strong></td>
+                <td>Sisa (Ashabah)</td>
+                <td>Selalu mendapatkan bagian sisa (*Ashabah Binafsihi*) dengan rasio 2:1 terhadap bagian anak perempuan.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>D. Hijab dan Mahjub</h3>
+        <p>Hijab adalah dinding penghalang bagi ahli waris tertentu untuk menerima harta warisan karena adanya ahli waris yang lebih dekat kekerabatannya. Contohnya: Saudara laki-laki kandung akan terhalang jatahnya (*mahjub*) jika pewaris memiliki anak laki-laki atau ayah kandung.</p>
+      </article>
+
+      <!-- SECTION 5: NASAB & HAK ANAK -->
+      <article class="materi-section-detail" id="materi-nasab">
+        <h2>👶 Nasab & Hak Anak</h2>
+        <p>Anak adalah amanah terindah sekaligus ujian bagi orang tua. Islam sangat memperhatikan perlindungan garis keturunan (nasab) anak demi menjaga kesucian nasab, hak kewarisan, hak perwalian nikah, serta perlindungan sosial anak.</p>
+
+        <div class="materi-ayat-box">
+          <p class="materi-ayat-arabic">ادْعُوهُمْ لِآبَائِهِمْ هُوَ أَقْسَطُ عِنْدَ اللَّهِ ۚ فَإِنْ لَمْ تَعْلَمُوا آبَاءَهُمْ فَإِخْوَانُكُمْ فِي الدِّينِ</p>
+          <p class="materi-ayat-latin">Ud'ūhum li'ābā'ihim huwa aqsaṭu 'indallāh, fa il-lam ta'lamū ābā'ahum fa ikhwānukum fid-dīn</p>
+          <p class="materi-ayat-translation">"Panggilah mereka (anak-anak angkat itu) dengan memakai nama bapak-bapak mereka; itulah yang lebih adil di sisi Allah, dan jika kamu tidak mengetahui bapak-bapak mereka, maka (panggilah mereka sebagai) saudara-saudaramu seagama."</p>
+          <span class="materi-ayat-source">QS. Al-Ahzab: 5</span>
+        </div>
+
+        <h3>A. Penetapan Nasab Anak</h3>
+        <p>Menurut hukum Islam, garis keturunan (nasab) seorang anak hanya dapat ditetapkan melalui:</p>
+        <ul class="materi-sublist">
+          <li><strong>Pernikahan yang Sah:</strong> Anak yang lahir di dalam ikatan pernikahan yang sah, minimal 6 bulan setelah akad nikah dilangsungkan.</li>
+          <li><strong>Pengakuan Anak (Ikrar Nasab):</strong> Suami secara sukarela dan yakin mengakui anak tersebut sebagai darah dagingnya, dengan syarat tidak bertentangan dengan logika medis/fakta ilmiah.</li>
+          <li><strong>Pembuktian Ilmiah:</strong> Pada masa modern, tes asam deoksiribonukleat (DNA) dapat dijadikan dasar ilmiah yang diakui Pengadilan untuk menetapkan status biologis anak.</li>
+        </ul>
+
+        <h3>B. Hak-Hak Anak Terhadap Orang Tua</h3>
+        <p>Islam mewajibkan orang tua untuk memenuhi hak-hak anak sejak sebelum ia lahir ke dunia:</p>
+        <ul class="materi-sublist">
+          <li><strong>Hak Hidup:</strong> Larangan keras melakukan aborsi tanpa alasan medis darurat atau membunuh anak karena ketakutan ekonomi.</li>
+          <li><strong>Hak Identitas (Nasab & Nama):</strong> Memperoleh nama yang baik, berakhlak, dan penyandaran nasab ke ayah biologis yang sah secara pernikahan.</li>
+          <li><strong>Hak Nafkah & Pengasuhan:</strong> Memperoleh makanan, pakaian, tempat tinggal, dan perlindungan kesehatan hingga anak tersebut mandiri (atau menikah bagi anak perempuan).</li>
+          <li><strong>Hak Tarbiyah (Pendidikan):</strong> Dididik iman, budi pekerti, pengetahuan agama Islam, dan bekal keterampilan hidup.</li>
+        </ul>
+
+        <h3>C. Kedudukan Anak Angkat (Adopsi)</h3>
+        <p>Islam membolehkan perbuatan memelihara, mendidik, dan mengasuh anak yatim/terlantar (adopsi) sebagai bentuk amal saleh yang mulia. Namun, Islam menetapkan batasan hukum yang tegas untuk mencegah pencampuran nasab:</p>
+        <ul class="materi-sublist">
+          <li><strong>Nasab Tidak Boleh Berubah:</strong> Anak angkat dilarang memakai nama belakang orang tua angkatnya pada bin/binti dokumen syar'i (nasab harus tetap ke ayah kandungnya).</li>
+          <li><strong>Bukan Ahli Waris:</strong> Anak angkat tidak mendapatkan jatah warisan secara hukum Faraidh dari orang tua angkatnya, dan sebaliknya.</li>
+          <li><strong>Wasiat Wajibah:</strong> Sebagai alternatif kasih sayang, orang tua angkat diperbolehkan (dan dianjurkan di Indonesia melalui KHI) memberikan jatah harta melalui **Wasiat Wajibah** yang nilainya maksimal **1/3** dari keseluruhan harta peninggalan sebelum wafat.</li>
+          <li><strong>Batasan Mahram:</strong> Hubungan anak angkat dan orang tua angkat (serta anak kandung orang tua angkat) tidak mengubah status kemahraman. Hijab syar'i (aurat) tetap berlaku di rumah saat anak tersebut telah baligh, kecuali jika ia disusui oleh ibu angkat sebelum usia 2 tahun (anak persusuan).</li>
+        </ul>
+      </article>
+
+      <!-- SECTION 6: POLIGAMI -->
+      <article class="materi-section-detail" id="materi-poligami">
+        <h2>🤲 Poligami dalam Islam</h2>
+        <p>Poligami adalah pernikahan seorang suami dengan lebih dari satu istri secara bersamaan. Islam tidak menciptakan poligami karena praktik ini telah merajalela tanpa batas sebelum Islam datang. Islam datang untuk **membatasi dan mengatur** poligami dengan syarat yang teramat ketat demi mewujudkan keadilan sosial.</p>
+
+        <div class="materi-ayat-box">
+          <p class="materi-ayat-arabic">فَانْكِحُوا مَا طَابَ لَكُمْ مِنَ النِّسَاءِ مَثْنَىٰ وَثُلَاثَ وَرُبَاعَ ۖ فَإِنْ خِفْتُمْ أَلَّا تَعْدِلُوا فَوَاحِدَةً</p>
+          <p class="materi-ayat-latin">Fankiḥū mā ṭāba lakum minan-nisā'i maṡnā wa ṡulāṡa wa rubā'a, fa in khiftum allā ta'dilū fa wāḥidah</p>
+          <p class="materi-ayat-translation">"Maka kawinilah wanita-wanita (lain) yang kamu senangi: dua, tiga atau empat. Kemudian jika kamu takut tidak akan dapat berlaku adil, maka (kawinilah) seorang saja."</p>
+          <span class="materi-ayat-source">QS. An-Nisa: 3</span>
+        </div>
+
+        <h3>A. Syarat Utama Poligami</h3>
+        <p>Suami diperbolehkan beristri lebih dari satu orang dengan syarat mutlak berikut:</p>
+        <ul class="materi-sublist">
+          <li><strong>Mampu Berlaku Adil:</strong> Adil yang dimaksud adalah keadilan **lahiriah**, meliputi penyediaan nafkah sandang, pangan, papan yang setara, pembagian giliran bermalam yang tertib, serta sikap ramah tamah yang seimbang. Keadilan dalam hal perasaan cinta (batiniah) diampuni karena di luar kemampuan manusia.</li>
+          <li><strong>Kemampuan Finansial & Fisik:</strong> Suami memiliki penghasilan yang cukup untuk membiayai seluruh istri dan anak-anak hasil poligami tersebut, serta sehat jasmani dan biologis.</li>
+          <li><strong>Batasan Maksimal Empat:</strong> Suami dilarang keras menikahi lebih dari empat istri dalam waktu bersamaan.</li>
+        </ul>
+
+        <h3>B. Hukum Poligami</h3>
+        <p>Hukum berpoligami bagi suami dapat bergeser tergantung kondisi niat and kemampuannya:</p>
+        <ul class="materi-sublist">
+          <li><strong>Mubah (Boleh):</strong> Hukum asal jika syarat adil terpenuhi dan ada kemaslahatan nyata.</li>
+          <li><strong>Sunnah:</strong> Jika terdapat kebutuhan syar'i mendesak (misal istri mandul atau sakit kronis) and suami sangat yakin mampu berlaku adil.</li>
+          <li><strong>Haram:</strong> Jika suami mengetahui bahwa dirinya lemah, emosional, and tidak akan sanggup berbuat adil sehingga menzalimi istri-istrinya.</li>
+        </ul>
+
+        <h3>C. Regulasi Hukum Positif di Indonesia</h3>
+        <p>Di Indonesia, asas pernikahan adalah monogami. Poligami diposisikan sebagai pengecualian yang dikontrol ketat oleh hukum negara (UU No. 1 Tahun 1974 tentang Perkawinan & Kompilasi Hukum Islam):</p>
+        <ul class="materi-sublist">
+          <li><strong>Wajib Izin Pengadilan:</strong> Poligami yang tidak disahkan oleh Pengadilan Agama dianggap ilegal secara hukum negara, and anak yang lahir dari istri kedua dst. akan kesulitan mendapatkan akta lahir yang sah.</li>
+          <li><strong>Syarat Alternatif (Salah Satu Harus Terpenuhi):</strong> Istri pertama tidak dapat menjalankan kewajibannya sebagai istri, atau istri mendapat cacat badan/penyakit yang tidak dapat disembuhkan, atau istri tidak dapat melahirkan keturunan.</li>
+          <li><strong>Syarat Kumulatif (Semua Harus Terpenuhi):</strong> Adanya persetujuan tertulis dari istri/istri-istri sebelumnya, adanya kepastian suami mampu membiayai kebutuhan hidup istri-istri dan anak-anak mereka, serta adanya jaminan bahwa suami akan berlaku adil terhadap istri-istri dan anak-anak mereka.</li>
+        </ul>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" title="Kembali ke atas">▲</button>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">☽</span>
+          <span>Hukum Keluarga Islam</span>
+        </div>
+        <p>Media pembelajaran fikih keluarga berbasis syariat Islam yang komprehensif dan mudah dipahami.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <a href="index.html">Beranda</a>
+        <a href="materi.html">Materi</a>
+        <a href="visi&amp;misi.html">Visi & Misi</a>
+        <a href="profil.html">Profil</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Topik Utama</h4>
+        <a href="materi.html#materi-nikah">Pernikahan (Nikah)</a>
+        <a href="materi.html#materi-waris">Hukum Waris</a>
+        <a href="materi.html#materi-perceraian">Talak & Perceraian</a>
+        <a href="faq.html">Tanya Jawab</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Hukum Keluarga Islam. Dibuat untuk keperluan akademik.</p>
+      <p class="footer-ayat">بِسْمِ اللّٰهِ</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
